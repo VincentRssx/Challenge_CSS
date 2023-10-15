@@ -1,0 +1,46 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    img{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 37vw;
+       margin: 0 auto;
+    }
+}
+body{
+    p{
+        text-align: center;
+    }
+}
+
+header{
+h1{
+    color: #a95f23;
+    text-align: center;
+    font-size: 8vw;
+    margin: 0;
+    padding: 0;
+}
+}
+
+ul{
+    li{
+        
+        list-style-type: none;
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+}
