@@ -7,7 +7,7 @@ const museumArray = [
 {name : "Museum 3", imgSrc :"https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
 ]
 
-const [Musée,setMusée] = useState(0);
+const [Musée,setMusée] = useState(1);
 
 const HandleClick = (museumTableau) => {
 setMusée(museumTableau)
@@ -16,12 +16,13 @@ setMusée(museumTableau)
     return(
 <body>
     <section>
+<div>
     {museumArray.map((museumTableau) =>{
         return(
+    <button onClick={() => HandleClick(museumTableau)}>{museumTableau.name}</button>
 
-            <button onClick={() => HandleClick(museumTableau)}>{museumTableau.name}</button>
-        )})}
-        <h2> CLICK ON THE DIFFERENT BUTTONS TO SEE OUR PARTNER MUSEUMS </h2>
+    )})}
+    </div>
         <ul>
         <li><p>{Musée.name}</p>
         <img className="imageMusé" src={Musée.imgSrc}/> </li>
